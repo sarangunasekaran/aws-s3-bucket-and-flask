@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+    <title>Export S3 Buckets Folder List</title>
+    
+    <style>
+    body {
+      font: 20px Inter, sans-serif;
+      line-height: 1.8;
+      color: #f5f6f7;
+    }
+    p {font-size: 16px;}
+    .margin {margin-bottom: 45px;}
+    .marginblack {margin-bottom: 20px;}
+    .bg-1 { 
+      background-color: #1abc9c; /* Green */
+      color: #ffffff;
+    }
+    .bg-2 { 
+      background-color: #474e5d; /* Dark Blue */
+      color: #ffffff;
+    }
+    .bg-3 { 
+      background-color: #ffffff; /* White */
+      color: #555555;
+    }
+    .bg-4 { 
+      background-color: #2f2f2f; /* Black Gray */
+      color: #fff;
+    }
+    .container-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
+    }
+    .navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+    }
+    .navbar-nav  li a:hover {
+      color: #1abc9c !important;
+    }
+    </style>
+  </head>
+
+
+  
+  <body>
+    <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>                        
+            </button>
+            <a class="navbar-brand" >Saran G</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">VISIT GITHUB</a></li>
+              <li><a href="#">README</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      
+      <!-- First Container -->
+      <div class="container-fluid bg-1 text-center">
+        <h3 class="margin">Listing Files and Directories from S3 Buckets</h3>
+        <p>An easy-access way to generate media details of your S3 Bucket</p>
+      </div>
+      <div class="container-fluid bg-3 text-center">
+  {% block content %}
+   
+  {% endblock %}
+</div>
+  <p>&nbsp;</p>
+      <!-- Second Container -->
+      <div class="container-fluid bg-2 text-center">
+        <h3 class="marginblack"></h3>
+        <p>Utilizing boto3 to list out the media files and folders from S3 buckets in tabular form and deploying a flask app with nginx and gunicorn3. This what makes the web-app completed and the end-result has been pushed to the GitHub for later revisions, if required.</p>
+        <a href="#" class="btn btn-default btn-lg">
+          <span class="glyphicon glyphicon-search"></span> Search
+        </a>
+      </div>    
+   
+ 
+  <section>
+    <div class="container-fluid bg-3 text-center">
+    <div class="container">
+
+        <div class="vlt-animated-block">
+            <h1 class="vlt-large-heading text-center">Author Details<span class="has-accent-color">.</span></h1>
+        </div>
+        <div class="vlt-product-hero-title__details">
+      
+            <div class="vlt-animated-block">
+                <h6>Design</h6>
+                <p>Saran Gunasekaran</p>
+            </div>
+            
+            <div class="vlt-animated-block">
+                <h6>Company</h6>
+                <p>NOT MENTIONED</p>
+            </div>
+
+            <div class="vlt-animated-block">
+                <h6>Date</h6>
+                <p>July 21, 2022</p>
+            </div>
+
+            <div class="vlt-animated-block">
+                <h6>Project</h6>
+                <p>AWS MLOPs</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</section>
+
+
+   <!-- Footer -->
+   <footer class="container-fluid bg-4 text-center">
+    <p>E-mail me on : <a href="#">saran1511g@gmail.com</a></p> 
+  </footer>
+</body>
+</html>
