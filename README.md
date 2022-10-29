@@ -8,4 +8,4 @@ I then wrote a python program to display the list of files and folders from S3 b
 
 But I decided to make it as a webpage, so did the same with the FLASK.
 
-A list of files and directories appeared in a new window.
+A list of files and directories appeared in a new window as we expected :)
